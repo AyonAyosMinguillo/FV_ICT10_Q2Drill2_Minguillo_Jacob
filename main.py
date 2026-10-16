@@ -21,7 +21,8 @@ def check_cos(e):
         document.getElementById("Fname").value = ""
         document.getElementById("Lname").value = ""
 
-    cadetofficers = "<br>".join(sorted(COC))
+    # final sort of inputs and values
+    cadetofficers = "<br>".join(sorted(COC)) 
     total_count = len(COC)
             
     output_text = f"ALL MEMBERS:<br>{cadetofficers}<br><br>TOTAL MEMBERS: {total_count}"
