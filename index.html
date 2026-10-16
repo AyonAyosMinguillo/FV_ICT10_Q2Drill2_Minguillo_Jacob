@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+<script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+<title>Drill 2</title>
+
+<style>
+    body {
+        background-color: #0000007e;
+        color: #bd4d4d;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    h2 {
+        color: #ece6e6;
+    }
+
+    .CadetBox {
+        background-color: #1e1e1e;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 350px;
+    }
+
+    .CadetBox p.subtitle {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .CadetBox input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        margin: 8px 0;
+        background-color: #121214;
+        color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .CadetBox button {
+        width: 96%;
+        padding: 10px;
+        margin-top: 15px;
+        background-color: #b20710;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .CadetBox button:hover {
+        background-color: #353434;
+    }
+
+    #output1 {
+        margin-top: 20px;
+        padding: 12px;
+        background-color: #121214;
+        border-radius: 6px;
+        font-size: 13px;
+        min-height: 20px;
+        color: #e6e4de;
+        white-space: pre-line;
+        text-align: left;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="CadetBox">
+        <h2>CADET OFFICER COURSE</h2>
+        <p class="subtitle">System Additions</p>
+
+        <input type="text" id="Fname" placeholder="First Name">
+        <input type="text" id="Lname" placeholder="Last Name">
+
+        <button py-click="check_cos">Submit</button>
+        <div id="output1"></div>
+    </div>
+
+<script type="py" src="main.py"></script>
+</body>
+</html>
